@@ -1,13 +1,125 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="oaz-MF-sW5">
+            <objects>
+                <viewController id="M6h-W1-Kyv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l8R-6U-vbq"/>
+                        <viewControllerLayoutGuide type="bottom" id="OjQ-NS-EZs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wII-Gg-ILj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHOTOS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="491-hH-CWA">
+                                <rect key="frame" x="20" y="20" width="560" height="154"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="C21-ro-uMV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="80"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Shv-Ru-GdZ">
+                                <rect key="frame" x="150" y="280" width="300" height="300"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Helsinki-Night-View" translatesAutoresizingMaskIntoConstraints="NO" id="8G0-JL-h5f">
+                                        <rect key="frame" x="0.0" y="100" width="100" height="100"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="1sX-SY-GUi"/>
+                                            <constraint firstAttribute="width" constant="97" id="O86-wY-ILS"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tlN-JV-sC9">
+                                        <rect key="frame" x="100" y="0.0" width="100" height="300"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Helsinki-Finland-900x1600" translatesAutoresizingMaskIntoConstraints="NO" id="DxG-ql-S06">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="96" id="DFt-wG-URc"/>
+                                                    <constraint firstAttribute="height" constant="100" id="c3Z-XL-IPk"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helsinki-6" translatesAutoresizingMaskIntoConstraints="NO" id="UdV-Ow-bqc">
+                                                <rect key="frame" x="0.0" y="100" width="100" height="100"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="96" id="24Y-aW-31t"/>
+                                                    <constraint firstAttribute="height" constant="100" id="TEE-Aj-6pV"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helsinki-seafarers-centre-modern-architecture-design" translatesAutoresizingMaskIntoConstraints="NO" id="wxp-Ld-KHv">
+                                                <rect key="frame" x="0.0" y="200" width="100" height="100"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="QMt-0m-NoD"/>
+                                                    <constraint firstAttribute="width" constant="96" id="az9-W9-5O3"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helsinki_cathedral_by_m_eralp-d6ekgmh" translatesAutoresizingMaskIntoConstraints="NO" id="6nK-BS-767">
+                                        <rect key="frame" x="200" y="100" width="100" height="100"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="97" id="0Ua-vR-Bxo"/>
+                                            <constraint firstAttribute="height" constant="100" id="0mT-rl-Htv"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="GVe-Yy-JBU"/>
+                                    <constraint firstAttribute="width" constant="300" id="fHY-TZ-Pik"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzO-6Z-dOW">
+                                <rect key="frame" x="546" y="550" width="34" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UgF-Wt-P7h"/>
+                                    <constraint firstAttribute="width" constant="34" id="WQR-DZ-Npp"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.60909150934327017" green="0.64827967171717171" blue="0.62630803223513998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="ebS-8h-erU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OjQ-NS-EZs" firstAttribute="top" secondItem="Shv-Ru-GdZ" secondAttribute="bottom" constant="20" id="8EC-ql-AmL"/>
+                            <constraint firstItem="491-hH-CWA" firstAttribute="trailing" secondItem="wII-Gg-ILj" secondAttribute="trailingMargin" id="9kq-Mz-ozr"/>
+                            <constraint firstItem="lzO-6Z-dOW" firstAttribute="trailing" secondItem="wII-Gg-ILj" secondAttribute="trailingMargin" id="ByJ-Ly-cpa"/>
+                            <constraint firstItem="491-hH-CWA" firstAttribute="top" secondItem="l8R-6U-vbq" secondAttribute="bottom" id="Dv1-sp-6Di"/>
+                            <constraint firstItem="491-hH-CWA" firstAttribute="leading" secondItem="wII-Gg-ILj" secondAttribute="leadingMargin" id="a00-Y2-8QM"/>
+                            <constraint firstItem="Shv-Ru-GdZ" firstAttribute="centerX" secondItem="wII-Gg-ILj" secondAttribute="centerX" id="fyg-fd-FSU"/>
+                            <constraint firstItem="OjQ-NS-EZs" firstAttribute="top" secondItem="lzO-6Z-dOW" secondAttribute="bottom" constant="20" id="nQs-nz-9Og"/>
+                            <constraint firstItem="491-hH-CWA" firstAttribute="centerX" secondItem="wII-Gg-ILj" secondAttribute="centerX" id="vkG-t8-WX5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gI8-dn-rq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-268" y="350"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Favourite_Place" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +127,411 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Helsinki-Night-View" translatesAutoresizingMaskIntoConstraints="NO" id="Ig9-VW-4hR">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uqy-qd-Nrl">
+                                <rect key="frame" x="20" y="20" width="257" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HELSINKI" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVo-lQ-w5m">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.92362330504074197" green="1" blue="0.9239184532597261" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FINLAND" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPG-Rf-lzp">
+                                        <rect key="frame" x="0.0" y="26" width="75" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.92362330500000001" green="1" blue="0.9239184533" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE LAND OF THE RISING SUN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D83-Ht-0yO">
+                                        <rect key="frame" x="0.0" y="52" width="257" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.92362330500000001" green="1" blue="0.9239184533" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="e71-5t-hYF"/>
+                                    <constraint firstAttribute="width" constant="257" id="gfu-yF-Zia"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="anE-rZ-zQW">
+                                <rect key="frame" x="245" y="389" width="111" height="79"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6W4-st-dDb">
+                                        <rect key="frame" x="0.0" y="0.0" width="111" height="32"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                        <state key="normal" title="About Helsinki">
+                                            <color key="titleColor" red="0.92362330504074197" green="1" blue="0.9239184532597261" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="32"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="yRu-1e-OeB" kind="show" id="3i6-hr-A5o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilC-Cv-4Pd">
+                                        <rect key="frame" x="0.0" y="47" width="111" height="32"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                        <state key="normal" title="PHOTOS">
+                                            <color key="titleColor" red="0.92362330500000001" green="1" blue="0.9239184533" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="47" width="200" height="32"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="M6h-W1-Kyv" kind="showDetail" id="sun-wZ-NRT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="7sm-GQ-XTq"/>
+                                    <constraint firstAttribute="height" constant="79" id="J8f-gV-7SQ"/>
+                                    <constraint firstAttribute="width" constant="111" id="NY9-bk-zl5"/>
+                                    <constraint firstAttribute="width" constant="200" id="fXo-SS-ij0"/>
+                                    <constraint firstAttribute="height" constant="79" id="gOe-Ij-YRw"/>
+                                    <constraint firstAttribute="width" constant="111" id="tQt-Bp-38H"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7sm-GQ-XTq"/>
+                                        <exclude reference="J8f-gV-7SQ"/>
+                                        <exclude reference="NY9-bk-zl5"/>
+                                        <exclude reference="fXo-SS-ij0"/>
+                                        <exclude reference="gOe-Ij-YRw"/>
+                                        <exclude reference="tQt-Bp-38H"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="NY9-bk-zl5"/>
+                                        <include reference="gOe-Ij-YRw"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="J8f-gV-7SQ"/>
+                                        <include reference="tQt-Bp-38H"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="345" y="701" width="200" height="79"/>
+                                    <mask key="constraints">
+                                        <include reference="7sm-GQ-XTq"/>
+                                        <include reference="fXo-SS-ij0"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ig9-VW-4hR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="174-QX-0bk"/>
+                            <constraint firstItem="anE-rZ-zQW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="225" id="2xc-CY-r6y"/>
+                            <constraint firstItem="Ig9-VW-4hR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="66M-fC-DjD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="anE-rZ-zQW" secondAttribute="trailing" constant="224" id="8aZ-Sb-JBC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="anE-rZ-zQW" secondAttribute="bottom" constant="20" id="Ert-g5-KU8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="anE-rZ-zQW" secondAttribute="bottom" constant="20" id="NeB-rr-xe7"/>
+                            <constraint firstItem="uqy-qd-Nrl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PnL-f3-4f1"/>
+                            <constraint firstItem="anE-rZ-zQW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="325" id="cEv-F1-v4I"/>
+                            <constraint firstItem="uqy-qd-Nrl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dtq-iv-bY9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ig9-VW-4hR" secondAttribute="bottom" id="edy-kJ-Aqg"/>
+                            <constraint firstAttribute="trailing" secondItem="Ig9-VW-4hR" secondAttribute="trailing" id="euj-5b-3l5"/>
+                            <constraint firstItem="anE-rZ-zQW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="125" id="nxl-9n-7fh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="anE-rZ-zQW" secondAttribute="bottom" constant="20" id="ykI-QN-slf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2xc-CY-r6y"/>
+                                <exclude reference="8aZ-Sb-JBC"/>
+                                <exclude reference="cEv-F1-v4I"/>
+                                <exclude reference="nxl-9n-7fh"/>
+                                <exclude reference="Ert-g5-KU8"/>
+                                <exclude reference="NeB-rr-xe7"/>
+                                <exclude reference="ykI-QN-slf"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="2xc-CY-r6y"/>
+                                <include reference="8aZ-Sb-JBC"/>
+                                <include reference="Ert-g5-KU8"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="nxl-9n-7fh"/>
+                                <include reference="NeB-rr-xe7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="cEv-F1-v4I"/>
+                                <include reference="ykI-QN-slf"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="380" y="350"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RRD-6n-Ytc">
+            <objects>
+                <viewController id="yRu-1e-OeB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Id1-It-rSL"/>
+                        <viewControllerLayoutGuide type="bottom" id="uad-u2-web"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="91o-dG-lDq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helsinki-stockmann-aleksanterinkatu-hdr" translatesAutoresizingMaskIntoConstraints="NO" id="bnx-15-AlM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="M0T-zA-kmY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Helsinki" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3V-oh-Ekf">
+                                <rect key="frame" x="243" y="20" width="115" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2XD-Xc-JMP"/>
+                                    <constraint firstAttribute="width" constant="115" id="Lfn-2v-C1k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vU-50-n0y">
+                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="EEo-fo-VZ9"/>
+                                    <constraint firstAttribute="height" constant="30" id="GPr-hV-0uN"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.94768576212781308" green="1" blue="0.92873308410069" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="umy-wD-A9i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOF-yO-jbs">
+                                <rect key="frame" x="474" y="20" width="106" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="M0K-6j-qdr"/>
+                                    <constraint firstAttribute="width" constant="106" id="fby-LL-kDl"/>
+                                </constraints>
+                                <state key="normal" title="Brief History">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="s8x-gH-oxq" kind="show" id="6ix-af-IeO"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LbP-84-lzW">
+                                <rect key="frame" x="20" y="196" width="560" height="448"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lov-8L-ip3">
+                                        <rect key="frame" x="0.0" y="0.0" width="89" height="26"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="89" id="9dY-GJ-XXK"/>
+                                            <constraint firstAttribute="height" constant="26" id="xQ1-3j-IC3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.4 million" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLR-M8-BAF">
+                                        <rect key="frame" x="0.0" y="36" width="104" height="21"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="104" id="SoL-KE-pyF"/>
+                                            <constraint firstAttribute="height" constant="21" id="gmf-PV-vio"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R60-Mh-ftZ">
+                                        <rect key="frame" x="0.0" y="67" width="89" height="26"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="89" id="14m-2Y-DpR"/>
+                                            <constraint firstAttribute="height" constant="26" id="arf-xS-UyK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ4-vW-9MT">
+                                        <rect key="frame" x="0.0" y="103" width="560" height="232"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="232" id="9rL-b8-4tD"/>
+                                            <constraint firstAttribute="width" constant="560" id="ZC4-d3-g3a"/>
+                                        </constraints>
+                                        <string key="text">Helsinki (/ˈhɛlsɪŋki/; Finnish pronunciation: [ˈhelsiŋki] ( listen); Swedish: Helsingfors) is the capital and largest city of Finland. It is in the region of Uusimaa, in southern Finland, on the shore of the Gulf of Finland, an arm of the Baltic Sea. Helsinki has a population of 626,305, an urban population of 1.2 million (31 December 2013),[7] and a metropolitan population of 1.4 million, making it the most populous municipality and urban area in Finland. Helsinki is located some 80 kilometres (50 mi) north of Tallinn, Estonia, 400 kilometres (250 mi) north east of Stockholm, Sweden, and 388 kilometres (241 mi) west of Saint Petersburg, Russia. Helsinki has close historical connections with these three cities.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Places To Visit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr8-ej-uYv">
+                                        <rect key="frame" x="0.0" y="345" width="100" height="26"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="dt5-Dy-z1a"/>
+                                            <constraint firstAttribute="width" constant="100" id="gtJ-HI-kxs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Museum ,Museum Of Contemporary Art , Helsinki Senate Square , Helsinki Market Square." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9u-p0-ggb">
+                                        <rect key="frame" x="0.0" y="381" width="549" height="67"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="67" id="4bN-kx-Zph"/>
+                                            <constraint firstAttribute="width" constant="560" id="cDI-tp-r4A"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="cDI-tp-r4A"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bnx-15-AlM" firstAttribute="leading" secondItem="91o-dG-lDq" secondAttribute="leading" id="1sS-mU-Fb2"/>
+                            <constraint firstItem="bnx-15-AlM" firstAttribute="top" secondItem="91o-dG-lDq" secondAttribute="top" id="3gI-oJ-Len"/>
+                            <constraint firstItem="LbP-84-lzW" firstAttribute="top" secondItem="bnx-15-AlM" secondAttribute="bottom" constant="68" id="8Y4-zv-d5B"/>
+                            <constraint firstItem="0vU-50-n0y" firstAttribute="top" secondItem="Id1-It-rSL" secondAttribute="bottom" id="97R-71-P2f"/>
+                            <constraint firstItem="0vU-50-n0y" firstAttribute="leading" secondItem="91o-dG-lDq" secondAttribute="leadingMargin" id="AAr-gv-4qB"/>
+                            <constraint firstAttribute="trailing" secondItem="bnx-15-AlM" secondAttribute="trailing" id="BfV-16-2lY"/>
+                            <constraint firstItem="g3V-oh-Ekf" firstAttribute="top" secondItem="Id1-It-rSL" secondAttribute="bottom" id="HZU-CW-3DK"/>
+                            <constraint firstItem="yOF-yO-jbs" firstAttribute="top" secondItem="Id1-It-rSL" secondAttribute="bottom" id="Phi-7e-QqD"/>
+                            <constraint firstItem="g3V-oh-Ekf" firstAttribute="centerX" secondItem="91o-dG-lDq" secondAttribute="centerX" id="SoM-A7-ggN"/>
+                            <constraint firstItem="LbP-84-lzW" firstAttribute="trailing" secondItem="91o-dG-lDq" secondAttribute="trailingMargin" id="TOw-xL-6IE"/>
+                            <constraint firstItem="LbP-84-lzW" firstAttribute="leading" secondItem="91o-dG-lDq" secondAttribute="leadingMargin" id="fvW-JK-GD6"/>
+                            <constraint firstItem="yOF-yO-jbs" firstAttribute="trailing" secondItem="91o-dG-lDq" secondAttribute="trailingMargin" id="hca-C5-MSK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXJ-ei-sLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4z4-t1-0f4">
+            <objects>
+                <viewController id="s8x-gH-oxq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jCc-DH-Iel"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tsp-Ox-6B0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i6h-mU-L2B">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="65855175" translatesAutoresizingMaskIntoConstraints="NO" id="nQZ-9Z-yrV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="285"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="285" id="hu7-kJ-gnB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brief History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pP3-Ls-qO5">
+                                <rect key="frame" x="20" y="293" width="106" height="26"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="l06-Ze-4Ay"/>
+                                    <constraint firstAttribute="height" constant="26" id="nwZ-Kv-v6E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abZ-XO-XkT">
+                                <rect key="frame" x="20" y="20" width="158" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="8Ly-Ja-jjg"/>
+                                    <constraint firstAttribute="height" constant="30" id="Kcz-F3-7rm"/>
+                                </constraints>
+                                <state key="normal" title="Back To About Helsinki">
+                                    <color key="titleColor" red="0.54990620230331089" green="0.58528645833333326" blue="0.56544979891417824" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yRu-1e-OeB" kind="showDetail" id="fYv-x4-IdE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwG-zZ-dZ1">
+                                <rect key="frame" x="20" y="327" width="560" height="208"/>
+                                <animations/>
+                                <string key="text">The Swedish name Helsingfors is the original official name of the City of Helsinki (in the very beginning, spelled Hellssingeforss). The Finnish language form of the name likely originates from Helsinga and similar names used for the river that is currently known as the Vantaa River, as documented already in the 14th century. Helsingfors comes from the name of the surrounding parish, Helsinge (source for Finnish Helsinki) and the rapids (Swedish: fors), which flowed through the original village, which is now located in Vantaa. As part of the Grand Duchy of Finland in the Russian Empire, Helsinki was known as Gelsingfors – a Russian adaption of the Swedish name.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KwG-zZ-dZ1" firstAttribute="leading" secondItem="i6h-mU-L2B" secondAttribute="leadingMargin" id="0ea-st-r8P"/>
+                            <constraint firstItem="pP3-Ls-qO5" firstAttribute="leading" secondItem="i6h-mU-L2B" secondAttribute="leadingMargin" id="BYt-O2-7ho"/>
+                            <constraint firstItem="nQZ-9Z-yrV" firstAttribute="leading" secondItem="i6h-mU-L2B" secondAttribute="leading" id="DmQ-ac-7Pq"/>
+                            <constraint firstItem="nQZ-9Z-yrV" firstAttribute="top" secondItem="i6h-mU-L2B" secondAttribute="top" id="HxU-34-QD2"/>
+                            <constraint firstItem="KwG-zZ-dZ1" firstAttribute="top" secondItem="pP3-Ls-qO5" secondAttribute="bottom" constant="8" id="a2n-OV-nr6"/>
+                            <constraint firstItem="abZ-XO-XkT" firstAttribute="leading" secondItem="i6h-mU-L2B" secondAttribute="leadingMargin" id="cnI-Kn-DnL"/>
+                            <constraint firstItem="KwG-zZ-dZ1" firstAttribute="trailing" secondItem="i6h-mU-L2B" secondAttribute="trailingMargin" id="dae-K8-soD"/>
+                            <constraint firstItem="abZ-XO-XkT" firstAttribute="top" secondItem="jCc-DH-Iel" secondAttribute="bottom" id="hWR-8g-QIi"/>
+                            <constraint firstItem="pP3-Ls-qO5" firstAttribute="top" secondItem="nQZ-9Z-yrV" secondAttribute="bottom" constant="8" id="kTI-Zy-CJq"/>
+                            <constraint firstAttribute="trailing" secondItem="nQZ-9Z-yrV" secondAttribute="trailing" id="mad-k6-aM7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g00-qy-8fI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1681" y="368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="65855175" width="1024" height="723"/>
+        <image name="Helsinki-Finland-900x1600" width="1600" height="900"/>
+        <image name="Helsinki-Night-View" width="1024" height="768"/>
+        <image name="helsinki-6" width="1600" height="902"/>
+        <image name="helsinki-seafarers-centre-modern-architecture-design" width="1000" height="804"/>
+        <image name="helsinki-stockmann-aleksanterinkatu-hdr" width="1518" height="986"/>
+        <image name="helsinki_cathedral_by_m_eralp-d6ekgmh" width="900" height="600"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ebS-8h-erU"/>
+        <segue reference="3i6-hr-A5o"/>
+    </inferredMetricsTieBreakers>
 </document>
